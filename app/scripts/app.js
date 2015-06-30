@@ -21,3 +21,5 @@ angular.module('interestDatingApp', ['ui.router'])
   // $httpProvider.interceptors.push('authInterceptor');
 
 })
+.constant('API_URL', 'http://dwa-backend.herokuapp.com/');
+

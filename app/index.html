@@ -44,6 +44,12 @@
       </div>
     </div>
 
+    <div class="alert alert-{{alert.type}} animated main-alert"
+         ng-class="{'flipInY': alert.show, 'flipOutY': !alert.show, 'alert-hidden': !alert.hasBeenShown}">
+      <strong>{{alert.title}}</strong>
+      {{alert.message}}
+    </div>
+
     <div class="view-wrap">
       <div ui-view></div>
     </div>
@@ -80,6 +86,9 @@
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/directives/logintoggle.js"></script>
         <script src="scripts/directives/validateequals.js"></script>
+        <script src="scripts/services/alert.js"></script>
+        <script src="scripts/services/auth.js"></script>
+        <script src="scripts/services/authtoken.js"></script>
         <!-- endbuild -->
 </body>
 </html>
