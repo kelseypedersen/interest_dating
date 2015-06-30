@@ -17,9 +17,10 @@ angular.module('interestDatingApp', ['ui.router'])
     controller: 'LoginCtrl',
   })
 
-
+  $httpProvider.defaults.useXDomain = true;
+  delete $httpProvider.defaults.headers.common["X-Requested-With"]; 
   // $httpProvider.interceptors.push('authInterceptor');
 
 })
-.constant('API_URL', 'http://dwa-backend.herokuapp.com/');
+.constant('API_URL', 'http://localhost:3000/');
 
