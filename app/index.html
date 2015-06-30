@@ -36,8 +36,8 @@
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav navbar-right">
-              <li><a ui-sref="main">Home</a></li>
-              <li><a ui-sref="login">Log In </a></li>
+              <li ui-sref-active><a ui-sref="main">Home</a></li>
+              <li ui-sref-active><a ui-sref="login">Log In</a></li>
             </ul>
           </div>
         </div>
@@ -79,6 +79,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/directives/logintoggle.js"></script>
+        <script src="scripts/directives/validateequals.js"></script>
         <!-- endbuild -->
 </body>
 </html>
