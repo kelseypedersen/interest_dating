@@ -405,7 +405,7 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.registerTask('heroku:production', 'clean less mincss');
+  grunt.registerTask('heroku:production', ['build', 'connect:dist:keepalive']);
 
   grunt.registerTask('server', 'DEPRECATED TASK. Use the "serve" task instead', function (target) {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
