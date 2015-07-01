@@ -34,3 +34,7 @@
   height: 50px;
   overflow: scroll;
 }
+
+#results {
+  margin-bottom: 10%;
+}
