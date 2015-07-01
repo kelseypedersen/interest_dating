@@ -21,3 +21,7 @@ body {
 .profile-list {
   list-style-type: none;
 }
+
+#profile {
+  margin-bottom: 10%;
+}
