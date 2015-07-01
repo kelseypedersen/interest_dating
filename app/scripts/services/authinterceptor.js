@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('tokenAuthApp')
+angular.module('interestDatingApp')
   .factory('authInterceptor', function(authToken) {
     return {
       request: function(config) {
