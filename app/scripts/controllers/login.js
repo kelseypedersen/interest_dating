@@ -22,8 +22,8 @@ angular.module('interestDatingApp')
     $scope.login = function() {
 
       var user = {
-        email: $scope.email,
-        password: $scope.password,
+        email: $scope.lemail,
+        password: $scope.lpassword,
       };
 
       auth.login(user).success(function(res) {
