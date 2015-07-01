@@ -47,5 +47,5 @@ angular.module('interestDatingApp', ['ui.router', 'firebase'])
   // $httpProvider.interceptors.push('authInterceptor');
 
 })
-.constant('API_URL', 'http://darwins-macbook-pro.local:3000/');
+.constant('API_URL', 'http://dwa-backend.herokuapp.com/');
 
