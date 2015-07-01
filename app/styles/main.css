@@ -127,3 +127,7 @@ div.footer {
 .navbar {
   border-radius: 0;
 }
+
+.navbar-brand img {
+  height: 125%;
+}
