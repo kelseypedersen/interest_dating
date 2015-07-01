@@ -1,4 +1,4 @@
-var comm = new Icecomm('8GjUq5A4smikXvkXzoOwhIAHaVWBEq3cYBttEHLhivTP8NL0CK');
+var comm = new Icecomm('mxj5NpcgQLisSWTfxbzCTHBCa0g3UggtTZWxm4JMK8zYxsau');
 
 comm.connect('custom room', {audio: false});
 
