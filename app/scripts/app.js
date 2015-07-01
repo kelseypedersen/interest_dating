@@ -25,6 +25,7 @@ angular.module('interestDatingApp', ['ui.router'])
     url: '/search',
     templateUrl: '/views/search.html',
     controller: 'SearchCtrl',
+  })
   .state('logout', {
     url: '/logout',
     controller: 'LogoutCtrl',
@@ -37,3 +38,4 @@ angular.module('interestDatingApp', ['ui.router'])
 })
 .constant('API_URL', 'http://jzs-macbook.local:3000/');
 
+angular.module('interestDatingApp', ['angular-advanced-searchbox']);
