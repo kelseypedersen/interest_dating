@@ -1,0 +1,34 @@
+
+#awesome {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  max-width: 40%;
+
+  transform: rotate(3deg);
+  -webkit-animation: rocktheboat 8s infinite;
+  -o-animation: rocktheboat 8s infinite;
+  animation: rocktheboat 8s infinite;
+  -webkit-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes rocktheboat {
+  50% { transform: rotate(-5deg); }
+  53% { transform: rotate(-5deg); }
+  56% { transform: rotate(-5deg); }
+}
+@keyframes rocktheboat {
+  50% { transform: rotate(-5deg); }
+  53% { transform: rotate(-5deg); }
+  56% { transform: rotate(-5deg); }
+}
+
+.laser {
+  position: absolute;
+  width: 15%;
+  top: 80%;
+  left: 60%;
+  z-index: -1;
+}
