@@ -1,10 +1,12 @@
 {
   "name": "interestdating",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "bower": "^1.4.1"
+  },
   "repository": {},
   "scripts": {
-    "start": "grunt serve"
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
