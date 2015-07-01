@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="col-md-12">
+    <div searchBar class="form-group">
+      <input type="text" ng-model="name" class="form-control" placeholder="search by interests">
+    </div>
+  </div>
+
+  <div class="user" ng-repeat="user in users">
+    <div class="col-md-4">
+      <div class="panel">
+        <div class="panel-body">
+          <img ng-src="{{user.user_image}}" alt="user_image" class="user_image"/>
+          <h2><a ng-href="#/user/{{user.id}}">{{user.username}}</a></h2>
+          <ul>
+            <li>{{user.age}}</li>
+            <li>{{user.gender}}</li>
+            <li>{{user.location}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
