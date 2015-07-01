@@ -89,45 +89,10 @@ video {
     width: 200px;
 }
 
-/*.main img{
-  max-width: 100%;
-}
-
-html {
-  background: url(images/main.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
-
-body {
-  /*background-image: url('/images/main.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;*/
-
-  background: url(/images/main.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 .not-jumbotron {
   color: white;
   text-align: center;
-  /*height: 550px;*/
 }
-
-/*.not-jumbotron h1:before {
-  content: "";
-  color: white;
-  width: 80%;
-  margin: auto;
-  background-color: grey;
-  font-size: 5em;
-  margin-top: .8em;
-}*/
 
 .not-jumbotron h1{
   color: white;
