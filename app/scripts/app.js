@@ -10,6 +10,7 @@ angular.module('interestDatingApp', ['ui.router'])
   .state('main', {
     url: '/main',
     templateUrl: '/views/main.html',
+    controller: 'MainCtrl'
   })
   .state('login', {
     url: '/login',
