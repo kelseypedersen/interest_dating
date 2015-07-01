@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('interestDatingApp', ['ui.router'])
+angular.module('interestDatingApp', ['ui.router', 'firebase'])
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 

@@ -13,4 +13,7 @@ angular.module('interestDatingApp')
       $scope.user = values[0].data;
       $scope.interests = values[1].data;
     });
+
+    $scope.chat = false;
+    $scope.video = false;
   });
