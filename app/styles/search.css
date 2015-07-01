@@ -1,0 +1,20 @@
+.user {
+  text-align: center;
+}
+
+.user ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user a {
+  text-decoration: none;
+  -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.user a:hover {
+  transform: scale(1.2);
+  -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}

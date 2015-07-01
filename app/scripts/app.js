@@ -26,6 +26,16 @@ angular.module('interestDatingApp', ['ui.router'])
     templateUrl: '/views/login.html',
     controller: 'LoginCtrl',
   })
+  .state('user', {
+    url: '/user/{id}',
+    templateUrl: '/views/user.html',
+    controller: 'UserCtrl',
+  })
+  .state('search', {
+    url: '/search',
+    templateUrl: '/views/search.html',
+    controller: 'SearchCtrl',
+  })
   .state('logout', {
     url: '/logout',
     controller: 'LogoutCtrl',

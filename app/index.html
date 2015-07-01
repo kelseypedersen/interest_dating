@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="styles/lumen.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/search.css">
     <!-- endbuild -->
   </head>
   <body ng-app="interestDatingApp">
@@ -65,12 +67,15 @@
 
     <!-- icecomm script -->
     <script type="text/javascript" src="https://cdn.icecomm.io/icecomm.js"></script>
-    
+
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/controllers/user.js"></script>
+        <script src="scripts/controllers/search.js"></script>
         <script src="scripts/directives/logintoggle.js"></script>
         <script src="scripts/directives/validateequals.js"></script>
+        <script src="scripts/directives/searchBar.js"></script>
         <script src="scripts/directives/icecomm.js"></script>
         <script src="scripts/services/alert.js"></script>
         <script src="scripts/services/auth.js"></script>
