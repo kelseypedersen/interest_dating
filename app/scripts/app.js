@@ -38,4 +38,3 @@ angular.module('interestDatingApp', ['ui.router'])
 })
 .constant('API_URL', 'http://jzs-macbook.local:3000/');
 
-angular.module('interestDatingApp', ['angular-advanced-searchbox']);
