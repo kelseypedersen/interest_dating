@@ -7,8 +7,20 @@ angular.module('interestDatingApp')
       $state.go('main');
     };
     this.login = function(user) {
-      return $http.post(API_URL + 'login', user).success(function(res) {
-        authSuccess(res);
+      // return $http.post(API_URL + 'login', user).success(function(res) {
+      //   authSuccess(res);
+      // });
+
+  console.log(user)
+      return $.ajax({
+        url: API_URL + 'login',
+        method: "POST",
+        dataType: 'json',
+        data: {user: user},
+        crossDomain: true,
+      }).success(function(res) {
+        debugger;
+        // authSuccess(res);
       });
     };
     this.register = function(user) {
