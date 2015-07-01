@@ -87,7 +87,14 @@ video {
     width: 200px;
 }
 
+.chatting {
+  height:200px;
+}
+
 .chatting li {
   list-style-type: none;
+  text-align: left;
+  padding-left: 20px;
+  overflow: scroll;
 }
 
