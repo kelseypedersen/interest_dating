@@ -34,6 +34,10 @@ angular.module('interestDatingApp', ['ui.router'])
     url: '/profile',
     controller: 'ProfileCtrl',
     templateUrl: '/views/user.html'
+  .state('edit', {
+    url: '/edit',
+    templateUrl: '/views/edit.html',
+    controller: 'EditCtrl',
   })
 
   $httpProvider.defaults.useXDomain = true;
