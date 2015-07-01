@@ -1,5 +1,5 @@
 <div class="container">
-  <form class="form-horizontal">
+  <form class="form-horizontal" ng-submit="update()">
   <fieldset>
 
   <!-- Form Name -->
@@ -43,7 +43,7 @@
 
   <!-- Text input-->
   <div class="form-group">
-    <label class="col-md-4 control-label" for="height">Height</label>  
+    <label class="col-md-4 control-label" for="height">Height</label>
     <div class="col-md-4">
     <input ng-model="height" id="height" name="height" type="text" placeholder="height" class="form-control input-md" required="">
     </div>
@@ -51,7 +51,7 @@
 
   <!-- Text input-->
   <div class="form-group">
-    <label class="col-md-4 control-label" for="age">Age</label>  
+    <label class="col-md-4 control-label" for="age">Age</label>
     <div class="col-md-4">
     <input ng-model="age" id="age" name="age" type="text" placeholder="Age" class="form-control input-md" required="">
     </div>
@@ -59,7 +59,7 @@
 
   <!-- Text input-->
   <div class="form-group">
-    <label class="col-md-4 control-label" for="eye-color">Eye Color</label>  
+    <label class="col-md-4 control-label" for="eye-color">Eye Color</label>
     <div class="col-md-4">
     <input ng-model="eyeColor" id="eye-color" name="eye-color" type="text" placeholder="Eye Color" class="form-control input-md" required="">
     </div>

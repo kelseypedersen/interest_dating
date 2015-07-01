@@ -33,7 +33,8 @@ angular.module('interestDatingApp', ['ui.router'])
   .state('profile', {
     url: '/profile',
     controller: 'ProfileCtrl',
-    templateUrl: '/views/user.html'
+    templateUrl: '/views/user.html',
+  })
   .state('edit', {
     url: '/edit',
     templateUrl: '/views/edit.html',
@@ -42,8 +43,8 @@ angular.module('interestDatingApp', ['ui.router'])
 
   $httpProvider.defaults.useXDomain = true;
   delete $httpProvider.defaults.headers.common["X-Requested-With"];
-  $httpProvider.interceptors.push('authInterceptor');
+  // $httpProvider.interceptors.push('authInterceptor');
 
 })
-.constant('API_URL', 'http://jzs-macbook.local:3000/');
+.constant('API_URL', 'http://darwins-macbook-pro.local:3000/');
 
