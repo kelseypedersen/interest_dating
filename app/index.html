@@ -41,6 +41,7 @@
       </div>
     </div>
 
+    <video id="localVideo" autoplay></video>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -62,16 +63,21 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <!-- icecomm script -->
+    <script type="text/javascript" src="https://cdn.icecomm.io/icecomm.js"></script>
+    
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/directives/logintoggle.js"></script>
         <script src="scripts/directives/validateequals.js"></script>
+        <script src="scripts/directives/icecomm.js"></script>
         <script src="scripts/services/alert.js"></script>
         <script src="scripts/services/auth.js"></script>
         <script src="scripts/services/authtoken.js"></script>
         <script src="scripts/controllers/nav.js"></script>
         <script src="scripts/controllers/logout.js"></script>
         <!-- endbuild -->
+
 </body>
 </html>
