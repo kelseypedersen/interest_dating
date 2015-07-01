@@ -87,3 +87,7 @@ video {
     width: 200px;
 }
 
+.chatting li {
+  list-style-type: none;
+}
+
