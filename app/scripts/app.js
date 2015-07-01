@@ -30,6 +30,11 @@ angular.module('interestDatingApp', ['ui.router'])
     url: '/logout',
     controller: 'LogoutCtrl',
   })
+  .state('edit', {
+    url: '/edit',
+    templateUrl: '/views/edit.html',
+    controller: 'EditCtrl',
+  })
 
   $httpProvider.defaults.useXDomain = true;
   delete $httpProvider.defaults.headers.common["X-Requested-With"];
