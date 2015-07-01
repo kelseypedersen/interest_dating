@@ -45,6 +45,8 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  background: none;
+  border: 0;
 }
 .jumbotron .btn {
   font-size: 21px;
@@ -87,3 +89,25 @@ video {
     width: 200px;
 }
 
+.not-jumbotron {
+  color: white;
+  text-align: center;
+}
+
+.not-jumbotron h1{
+  color: white;
+  width: 80%;
+  margin: 30px auto;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 5em;
+  margin-top: .8em;
+}
+
+div.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #F8F8F8;
+}
