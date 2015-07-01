@@ -25,9 +25,15 @@ angular.module('interestDatingApp', ['ui.router'])
     url: '/search',
     templateUrl: '/views/search.html',
     controller: 'SearchCtrl',
+  .state('logout', {
+    url: '/logout',
+    controller: 'LogoutCtrl',
   })
 
-
+  $httpProvider.defaults.useXDomain = true;
+  delete $httpProvider.defaults.headers.common["X-Requested-With"];
   // $httpProvider.interceptors.push('authInterceptor');
 
 })
+.constant('API_URL', 'http://jzs-macbook.local:3000/');
+
