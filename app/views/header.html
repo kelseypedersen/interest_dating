@@ -1,7 +1,7 @@
 <div class="navbar navbar-default" role="navigation" ng-controller="NavCtrl">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" ui-sref="pirate">
         <img alt="Brand" src="/images/logo.png">
       </a>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
@@ -17,11 +17,11 @@
     <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
       <ul class="nav navbar-nav navbar-right">
-        <li ui-sref-active><a ui-sref="main">Home</a></li>
+        <!-- <li ui-sref-active><a ui-sref="main">Home</a></li> -->
         <li ui-sref-active ng-hide="isAuthenticated()"><a ui-sref="login">Log In</a></li>
-        <li ui-sref-active ng-show="isAuthenticated()"><a ui-sref="logout">Log Out</a></li>
         <li ui-sref-active ng-show="isAuthenticated()"><a ui-sref="search">Search</a></li>
         <li ui-sref-active ng-show="isAuthenticated()"><a ng-href="#/user/{{getToken()}}">Profile</a></li>
+        <li ui-sref-active ng-show="isAuthenticated()"><a ui-sref="logout">Log Out</a></li>
       </ul>
     </div>
   </div>

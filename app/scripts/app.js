@@ -41,6 +41,10 @@ angular.module('interestDatingApp', ['ui.router', 'firebase'])
     templateUrl: '/views/edit.html',
     controller: 'EditCtrl',
   })
+  .state('pirate', {
+    url: '/pirate',
+    templateUrl: '/views/pirate.html',
+  })
 
   $httpProvider.defaults.useXDomain = true;
   delete $httpProvider.defaults.headers.common["X-Requested-With"];
