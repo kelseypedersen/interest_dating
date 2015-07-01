@@ -1,0 +1,27 @@
+body {
+  background-color: #158CBA;
+}
+
+#profile-head {
+  /*width: 50%;*/
+  margin: auto;
+  text-align: center;
+}
+
+.user_image {
+  width: 100px;
+  height: 100px;
+  /*border: 2px solid red;*/
+  border-radius: 50px;
+  background-color: gray;
+}
+
+#bio {
+  text-align: center;
+}
+
+.profile-list {
+  /*text-align: center;*/
+  list-style-type: none;
+  /*padding: 0;*/
+}

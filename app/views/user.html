@@ -1,0 +1,68 @@
+<div class="container">
+  <div id="profile-head" class="row">
+    <div class="panel col-md-12">
+      <div class="panel-body">
+        <img ng-src="{{user.user_image}}" alt="user_image" class="user_image"/>
+        <h1>{{user.username}}</h1>
+        <h3>{{user.age}} &#8226 {{user.gender}} &#8226 {{user.location}}</h3>
+        <button class="btn btn-success col-md-5">
+          Message
+          <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+        </button>
+        <button class="btn btn-success col-md-5 col-md-offset-2">
+          Chat
+          <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3>About {{user.username}}</h3>
+        </div>
+        <div class="panel-body">
+          {{user.bio}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3>Details</h3>
+        </div>
+        <div class="panel-body">
+          <ul class="profile-list">
+            <li>Gender: {{user.gender}}</li>
+            <li>Looking For: {{user.looking_for}}</li>
+            <li>Ethnicity: {{user.ethnicity}}</li>
+            <li>Height: {{user.height}}</li>
+            <li>Age: {{user.age}}</li>
+            <li>Eye Color: {{user.eye_color}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3>Interests</h3>
+        </div>
+        <div class="panel-body">
+          <ul class="profile-list">
+            <li ng-repeat="interest in interests">
+              {{interest.name}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
