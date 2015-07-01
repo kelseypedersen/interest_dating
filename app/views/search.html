@@ -1,20 +1,32 @@
 <div class="container">
-  <div class="col-md-12">
-    <div searchBar class="form-group">
-      <input type="text" ng-model="name" class="form-control" placeholder="search by interests">
+
+  <div id="searchField" class="col-md-12">
+    <div class="form-group">
+      <form ng-submit="searchInterests()">
+      <div class="col-md-10">
+        <input type="text" ng-model="query" class="form-control" placeholder="search by interests">
+      </div>
+      <div class="col-md-2">
+        <input type="submit" class="btn btn-success">
+      </div>
+      </form>
     </div>
   </div>
 
-  <div class="user" ng-repeat="user in users">
+  <div class="user" ng-repeat="person in users" ng-if="person.show">
     <div class="col-md-4">
       <div class="panel">
         <div class="panel-body">
-          <img ng-src="{{user.user_image}}" alt="user_image" class="user_image"/>
-          <h2><a ng-href="#/user/{{user.id}}">{{user.username}}</a></h2>
+          <img ng-src="{{person.user.user_image}}" alt="user_image" class="user_image"/>
+          <h2><a ng-href="#/user/{{person.user.id}}">{{person.user.username}}</a></h2>
           <ul>
-            <li>{{user.age}}</li>
-            <li>{{user.gender}}</li>
-            <li>{{user.location}}</li>
+            <li>{{person.user.age}}</li>
+            <li>{{person.user.gender}}</li>
+            <li>{{person.user.location}}</li>
+          </ul>
+          <h3>Interests</h3>
+          <ul class="interests">
+            <li ng-repeat="interest in person.interests">{{interest.name}}</li>
           </ul>
         </div>
       </div>

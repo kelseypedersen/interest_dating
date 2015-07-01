@@ -1,10 +1,11 @@
 'use strict';
 
 angular.module('interestDatingApp')
-  .controller('UserCtrl', function ($scope, $stateParams, $http, $q, API_URL) {
-    // $http.get('http://dwa-backend.herokuapp.com/users/' + $stateParams.id).success(function(data) {
-    //   $scope.user = data
-    // })
+  .controller('UserCtrl', function ($scope, $stateParams, $http, $q, API_URL, authToken) {
+
+    $scope.id = $stateParams.id;
+    $scope.current_id = authToken.getToken();
+
     var user = $http.get(API_URL + 'users/' + $stateParams.id);
     var interests = $http.get(API_URL + 'users/' + $stateParams.id + '/interests');
 

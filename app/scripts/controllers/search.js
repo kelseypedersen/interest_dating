@@ -1,16 +1,26 @@
 'use strict';
 
 angular.module('interestDatingApp')
-  .controller('SearchCtrl', function ($scope, $stateParams, $http, $q, API_URL) {
-    $http.get(API_URL + 'users/').success(function(data) {
+  .controller('SearchCtrl', function ($scope, $http, API_URL) {
+    $http.get(API_URL + 'search').success(function(data) {
       $scope.users = data
+
+      for (var person in $scope.users){
+        $scope.users[person].show = true;
+      }
     })
-    // $scope.user = $http.get('http://dwa-backend.herokuapp.com/users/' + $stateParams.id);
-    // $scope.interests = $http.get('http://dwa-backend.herokuapp.com/users/' + $stateParams.id + '/interests');
-
-    // $q.all([$scope.user, $scope.interests]).then(function(values) {
-
-    //   $scope.user = values[0].data;
-    //   $scope.interests = values[1].data;
-    // });
+    $scope.searchInterests = function(){
+      if (!$scope.query){
+        for (var person in $scope.users){
+          $scope.users[person].show = true;
+        }
+        return;
+      }
+      for (var person in $scope.users){
+        $scope.users[person].show = $scope.users[person].interests.some(function(obj){
+          return obj.name == $scope.query
+        })
+      }
+    }
   });
+
